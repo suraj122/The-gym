@@ -1,0 +1,383 @@
+/*
+================
+custom styles
+================
+*/
+
+body {
+
+	background: #f0f0f0;
+	font: 14px/20px Arial Sans-serif;
+	color: #555;
+
+}
+
+h1 {
+
+	text-align: center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 5% 0;
+
+}
+
+h2 {
+
+	text-decoration: underline;
+	padding-left: 2%;
+
+}
+
+h3 {
+
+	line-height: 110%;
+	padding: 2%;
+
+}
+
+p {
+
+	padding: 1%;
+
+}
+
+img {
+
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+
+}
+
+a {
+
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+a:hover {
+
+	color: #999;
+
+}
+
+/*
+=================
+primary header
+=================
+*/
+
+header {
+
+	background: #405580;
+	width: 100%;
+	height: 86px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+}
+
+#logo {
+
+	background: url(../images/logos.png) no-repeat center;
+	background-size: cover;
+	margin: 20px;
+	width:70px;
+	height: 60px;
+	float: left;
+
+}
+
+nav {
+
+	float: right;
+	padding: 35px 20px 20px 0;
+
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(../images/icon.png) no-repeat center;
+
+}
+
+a:hover#menu-icon {
+
+	border-radius: 4px;
+
+}
+
+nav ul li {
+
+	display: inline-block;
+	padding-left: 10px;
+
+}
+
+nav li a {
+
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: -0.1em;
+
+}
+
+/*
+=============
+images-slide
+=============
+*/
+
+#doc {
+
+	margin: 40px 0;
+
+}
+
+#content {
+	margin: 0 auto;
+	max-width: 1140px;
+	margin-top: 90px;
+
+}
+
+.blueberry {
+
+	max-width: 1020px;
+	margin-top: 90px;
+
+}
+.slides img {
+	max-width: 1000px;
+	max-height: 500px;
+}
+
+/*
+=================
+blueberry-slider
+=================
+*/
+
+.blueberry { margin: 0 auto; }
+.blueberry .slides {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.blueberry .slides li img {
+	display: block;
+	width: 100%;
+	max-width: none;
+}
+.blueberry .slides li.active { display: block; position: relative; }
+.blueberry .crop li img { width: auto; }
+
+.blueberry .pager {
+	height: 40px;
+	text-align: center;
+}
+.blueberry .pager li { display: inline-block; }
+.blueberry .pager li a,
+.blueberry .pager li a span {
+	display: block;
+	height: 4px;
+	width: 4px;
+}
+.blueberry .pager li a {
+	padding: 18px 8px;
+-webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.blueberry .pager li a span {
+	overflow: hidden;
+	background: #c0c0c0;
+	text-indent: -9999px;
+-webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.blueberry .pager li.active a span { background: #404040; }
+
+/*
+============
+section
+============
+*/
+
+section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+article {
+	margin: 0 auto;
+	width: 50%;
+	float: left;
+	height: auto;
+	padding: 4%;
+}
+article img {
+
+	width: 100%;
+	height: auto;
+
+}
+
+aside {
+	float: right;
+	margin: 0 auto;
+	padding: 2%;
+	width: 35%;
+	height: auto;
+}
+
+.gym li {
+
+	padding-left: 2%;
+
+}
+
+.section img{
+
+	width: 400px;
+	height: 250px;
+}
+
+/*
+============
+footer
+============
+*/
+
+footer {
+
+	background: #333333;
+	width: 100%;
+	opacity: 0.90;
+	overflow: hidden;
+
+}
+
+ footer h3,
+ footer p {
+	color: #fff;
+}
+
+.social li {
+
+	display: inline-block;
+
+}
+.social li img {
+
+	height: 50px;
+
+} 
+
+footer.second {
+	border-top: 1px solid #4d4e50;
+	background: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+
+
+/*------------Media-Queries-------------*/
+
+@media screen and (max-width: 478px) {
+
+	body {
+		position: absolute;
+	}
+
+}
+
+@media screen and (max-width: 740px) {
+
+header {
+	position: absolute;
+}
+
+#menu-icon {
+	display: inline-block;
+}
+
+nav ul, nav:active ul {
+
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 60px;
+	padding: 20px;
+	background: #405580;
+	border: 1px solid #fff;
+	border-radius: 2px 0 2px 2px;
+	width: 50%
+
+
+}
+
+nav li {
+
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+
+}
+nav:hover ul {
+
+	display: block;
+}
+
+section {
+
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+article {
+
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+aside {
+
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+}
